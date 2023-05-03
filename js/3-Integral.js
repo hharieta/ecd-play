@@ -180,7 +180,8 @@ function startTime(time){
 
 //cuenta de las preguntas
 function QueCounter(index){
+    const total_questions = questions.length - 30;
     const bottom_ques_conter = quiz_box.querySelector(".total_que");
-    let totalQueCountTag = '<span><p>'+ index +'</p>de<p>'+ questions.length+'</p>Preguntas</span>';
+    let totalQueCountTag = '<span><p>'+ index +'</p>de<p>'+ total_questions +'</p>Preguntas</span>';
     bottom_ques_conter.innerHTML = totalQueCountTag;
 }
