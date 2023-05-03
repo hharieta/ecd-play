@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos de encabezado*/
+.encabezado{
+    display: flex;
+    background: #38096e;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.text{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    background:  #235B4E;
+    background-image: url("../src/img/fondo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    background-image: url("fondo-abstracto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+       }
+
+

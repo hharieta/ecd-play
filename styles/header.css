@@ -1,0 +1,19 @@
+/*Estilos de encabezado*/
+.encabezado{
+    display: flex;
+    background: #ffffff;
+    background-image: url(../src/img/mobilelogo.png);
+    background-repeat: repeat;
+    background-size: fill;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.text{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+}

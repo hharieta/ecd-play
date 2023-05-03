@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .heading { color: #ffffff; }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/info.css">
+        <script src="https://kit.fontawesome.com/ebfc397d20.js" crossorigin="anonymous"></script>
+        <title>Cálculo Diferencial</title>
+    </head>
+    <body>
+        <header class="encabezado">
+            <h2 class="heading">MATERIA: Cálculo Diferencial SEMESTRE: 1</h2>
+        </header>
+        <!--Boton de inicio-->
+        <div class="start_btn"><button>INICIAR</button></div>
+
+        <!--Información del desafio-->
+        <div class="info_box">
+            <div class="info_title">
+                <span>Cálculo Diferencial, ¿Quieres regresar al menú principal o empezar el exámen?</span>
+            </div>
+            <div class="buttons">
+                <button class="quit">Menu principal</button>
+                <button class="restart">Empezar</button>
+            </div>
+        </div>
+
+        <!--Quiz box-->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Desafio: Calculo diferenial</div>
+                <div class="timer">
+                    <div class="time_text">Tiempo restante: </div>
+                    <div class="timer_min">3600</div>
+                </div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- <span>¿Cuántas soluciones tiene la ecuacion x^2=5x?</span> -->
+                </div>
+                <div class="option_list">
+                    
+                </div>
+            </section>
+            <footer>
+                <div class="total_que">
+                    <!--<span><p>2</p>de<p>5</p>Preguntas</span>-->
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+
+        <!--Resultados-->
+        <div class="result_box">
+            <div class="complete_text">
+                ¡Exámen terminado!
+            </div>
+            <div class="score_text">
+                <span> obtuviste <p>7</p> de <p>15</p> </span>
+            </div>
+            <div class="buttons">
+                <button class="restart"> Reintentar </button>
+                <a href="index.html"><button class="quit"> Regresar al menu para seleccionar nivel </button></a>
+            </div>
+        </div>
+
+        <script src="../js/2-diferencial.js"></script>
+        <script src="../js/2-preguntas-diferencial.js"></script>
+
+    </body>
+</html>
