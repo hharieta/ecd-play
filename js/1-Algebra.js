@@ -26,6 +26,7 @@ restart_btn.onclick = () =>{
     startTime(3600);
 }
 
+let selected_ques = 0;
 let que_cont = 0;
 let que_numb = 1;
 let counter;
@@ -71,9 +72,9 @@ next_btn.onclick = () =>{
     if(que_cont < questions_to_show - 1){
         que_cont++;
         que_numb++;
-        var index = numbers[que_cont];
-        console.log(index);
-        showQuestions(index);
+        selected_ques = numbers[que_cont];
+        console.log(selected_ques);
+        showQuestions(selected_ques);
         QueCounter(que_numb);
         next_btn.style.display = "none";
     } else{
@@ -107,7 +108,7 @@ let CrossIcon = '<div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
 //seleccion de pregunta
 function optionSelected(answer){
     let userAns = answer.textContent;
-    let correctAns = questions[que_cont].answer;
+    let correctAns = questions[selected_ques].answer;
     let AllOptions = option_list.children.length;
     if(userAns == correctAns){
         userScore+=1;
