@@ -2,22 +2,56 @@
 <html lang="en">
     <head>
         <style>
-            .heading { color: #ffffff; }
+            @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Girassol&family=Noto+Sans&family=Rampart+One&family=Lobster&display=swap");
         </style>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/index.css">
+        <!-- <link rel="stylesheet" href="../styles/index.css"> -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous"/>
         <link rel="stylesheet" href="../styles/info.css">
+        <link rel="stylesheet" href="../styles/pages.css">
         <script src="https://kit.fontawesome.com/ebfc397d20.js" crossorigin="anonymous"></script>
         <title>Algebra</title>
     </head>
     <body>
-        <header class="encabezado">
-            <h2 class="heading">MATERIA: Álgebra Lineal  SEMESTRE: 2</h2>
+        <header>
+            <nav
+              class="navbar navbar-expand-lg navbar-light"
+              style="background-color: #1B396A;"
+            >
+              <a class="navbar-brand" href="#"></a>
+      
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: white;" href="index.html">Volver</a>
+                </li>
+              </ul>
+            </nav>
+            <div
+              class="cover-small d-flex justify-content-end align-items-start p-5 flex-column"
+              style="background-image: url(../src/img/LOGO-ITCANCUN2.png);"
+              title="algebralineal"
+            >
+              <h1 style="color: white;">
+                Materia 1: Algrebra
+              </h1>
+              <p style="color: white;">
+                "Las matemáticas son la gimnasia del espíritu y una preparación para la filosofía" 
+              </p>
+              <!-- <button class="btn btn-success">
+                Comprar
+              </button> -->
+            </div>
         </header>
-        
-        <!--Boton de inicio-->
+
+        <section>
+            <div class="container mt-5 mb-5">
+                <!--Boton de inicio-->
 
         <div class="start_btn"><button>INICIAR</button></div>
 
@@ -42,6 +76,7 @@
                 </div>
             </header>
             <section>
+                <div class="container mt-5 mb-5"></div>
                 <div class="que_text">
              
                 </div>
@@ -66,9 +101,11 @@
             </div>
             <div class="buttons">
                 <button class="restart"> Reintentar </button>
-                <a href="index.html"><button class="quit"> Regresar al menu para seleccionar nivel </button></a>
+                <a href="index.html"><button class="quit"> Regresar al menú</button></a>
             </div>
         </div>
+            </div>
+        </section>
 
         <script src="../js/1-Algebra.js"></script>
         <script src="../js/1-preguntas-algebra.js"></script>
