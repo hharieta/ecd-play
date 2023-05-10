@@ -519,7 +519,159 @@ let questions = [
             "- ln(cos x) + ln (sen x) + c"
         ]
     },
+    
+    {
+        numb: 41,
+
+        question: "Integrales con cambio de variable: ∫ dx/x^2√(4 + x^2)",
+        answer:   "- 1/ 4 sen[arctan  (x/2)] +c",
+
+        options: [
+            " 1/ 4 sen[arccos  (1/2)] +c",
+
+            "- 1/ 3 cos[arcsen] +c",
+            " 1/ 2 sen[arctan  (x/2)] +c",
+            "- 1/ 4 sen[arctan  (x/2)] +c"
+        ]
+
+    },
+
+    {
+        numb: 42,
+
+        question: "Integrales trigonometricas: ∫ (cos x - sen x) dx",
+        answer:   "sen x + cos x +c",
 
 
+
+        options: [
+            "cosc x + tan x +c",
+            "sen x + cos x +c",
+
+            "sen x - tan x +c",
+            "tan x - cos x +c"
+        ]
+    },
+
+
+    {
+        numb: 43,
+
+        question: "Integrales trigonometricas: ∫ (3x^2 - sec^2 x) dx",
+        answer:   "x^3 - tan x +c",
+
+
+        options: [
+            "x^3/3 - cosc x +c",
+
+            "2x^2/2 + sen x +c",
+            "x^2 + cos x +c",
+
+            "x^3 - tan x +c"
+        ]
+    },
+
+
+    {
+
+        numb: 44,
+        question: "Integrales trigonometricas: ∫ (e^x cos e^x) dx",
+
+        answer:   "sen e^x +c",
+
+
+        options: [
+
+            "sen e^x +c",
+            "cos ex^2",
+            "tan e^x",
+            "sen ex^2 +c"
+        ]
+    },
+
+    {
+        numb: 45,
+        question: "Integrales trigonometricas: ∫ x sen(x^2 + 5) dx",
+        answer:   "-1/2 cos (x^2 + 5) +c",
+
+        options: [
+            "4 cos (x^2 + 5) +c",
+            "1/2 sen (x + 6) +c",
+            "-1/2 cos (x^2 + 5) +c",
+            "3/2 sen (x^3 + 4) +c"
+
+        ]
+    },
+
+    {
+        numb: 46,
+        question: "Integrales trigonometricas: ∫ cos^3 dx",
+        answer: "-1/3 sen^3 x +c",
+
+        options: [
+
+            "1/3 sen^3 x +c",
+            "3/sen^3 x +c",
+            "-1/3 sen^3 x +c",
+            "-3/sen^3 x +c"
+        ]
+    },
+
+    {
+        numb: 47,
+        question: "Integrales trigonometricas: ∫ sen^4 dx",
+        answer: "3/8x - 1/4 sen 2x + 1/32 sen 4x + c",
+
+
+        options: [
+            "3/8x - 1/4 sen 2x + 1/32 sen 4x + c",
+            "-sen 3x + sen 4x + c",
+            "-3/8x + 1/4 cos 2x - 1/32 cos 4x + c",
+            "sen 3x + sen 4x + c"
+        ]
+    },
+
+    {
+        numb: 48,
+        question: "Integrales trigonometricas: ∫ sen^5 x cos^2 x dx",
+        answer:   "-1/3 cos^3 x + 2/5 cos^5 x - 1/7 cos^7 x + c",
+
+
+        options: [
+            "-3 sen^2 x - 1/2 sen^4 x + tan^3 +c",
+            "3 cos^2 x - 1/2 cos^4 x + cos^3 +c",
+            "1/3 sen^3 x - 2/5 sen^5 x + 1/7 tan^7 x + c",
+            "-1/3 cos^3 x + 2/5 cos^5 x - 1/7 cos^7 x + c"
+        ]
+    },
+
+    {
+        numb: 49,
+
+        question: "Integrales trigonometricas: ∫ sen^2 4x dx",
+        answer: "1/2x - 1/16 sen 8x +c",
+
+        options: [
+            "-1/2x - 1/16 cos 3x +c",
+            "-3/4x + 1/6 tan x +c",
+            "3/4x + 1/6 tan x +c",
+            "1/2x - 1/16 sen 8x +c"
+        ]
+    },
+
+
+    {
+        numb: 50,
+        question: "Integrales trigonometricas: ∫ cos^5 x dx",
+        answer: "sen x - 2/3 sen^3 x + 1/5 sen^5 x + c",
+
+        options: [
+            " cos x + 2 tan^2 x + 3 sen^5 x + c",
+            " -sen x + 3/2 tan^2 x + 1/3 sen^5 x + c",
+
+            "- cos x + 1/2 cos^2 x + 1/2 sen^5 x + c",
+            "sen x - 2/3 sen^3 x + 1/5 sen^5 x + c"
+        ]
+    },
 
 ];

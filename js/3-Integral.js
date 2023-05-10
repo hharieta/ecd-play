@@ -105,7 +105,7 @@ let CrossIcon = '<div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
 //seleccion de pregunta
 function optionSelected(answer){
     let userAns = answer.textContent;
-    let correctAns = questions[que_cont].answer;
+    let correctAns = questions[selected_ques].answer;
     let AllOptions = option_list.children.length;
     if(userAns == correctAns){
         userScore+=1;
