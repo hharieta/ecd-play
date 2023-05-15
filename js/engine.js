@@ -74,7 +74,7 @@ next_btn.onclick = () =>{
         question_number++;
         selected_questions = numbers[questions_counter];
         console.log(selected_questions);
-        showQuestions(selected_questions);
+        showQuestions(16);
         QuestionCounter(question_number);
         next_btn.style.display = "none";
     } else{
