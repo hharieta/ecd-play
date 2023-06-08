@@ -16,6 +16,11 @@
         <link rel="stylesheet" href="../styles/info.css">
         <link rel="stylesheet" href="../styles/pages.css">
         <script src="https://kit.fontawesome.com/ebfc397d20.js" crossorigin="anonymous"></script>
+        <script type="module">
+            import { LaTeXJSComponent } from "https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs"
+            customElements.define("latex-js", LaTeXJSComponent)
+        </script>
+        
         <title>Ecuaciones Diferenciales</title>
     </head>
     <body>
@@ -69,7 +74,7 @@
         <!--Quiz box-->
         <div class="quiz_box" >
             <header>
-                <div class="title">Desafío: Ecuaciones</div>
+                <div class="title">Materia: Ecuaciones Diferenciales</div>
                 <div class="timer">
                     <div class="time_text">Tiempo restante: </div>
                     <div class="timer_min">3600</div>
@@ -108,7 +113,7 @@
         </section>
 
         <script src="../js/engine.js"></script>
-        <script src="../js/equations_questions.js"></script>
+        <script src="../js/5-Preguntas - Ecuaiones.js"></script>
 
     </body>
 </html>

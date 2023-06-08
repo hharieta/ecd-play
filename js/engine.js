@@ -57,7 +57,7 @@ function shuffle(a) {
   }
 
   let numbers = [
-    0,1,2,4,5,6,7,8,9,10,
+    2,4,5,6,7,8,9,10,
     11,12,13,14,15,16,17,18,19,20,
     21,22,23,24,25,26,27,28,29,30,
     31,32,33,34,35,36,37,38,39,40,
@@ -144,12 +144,12 @@ function showTotalBox(){
 
 
 
-    if(user_score >= 0 && user_score <= 34){
+    if(user_score >= 0 && user_score <= 14){
         let scoreTag = "<span><p>\n Lo sentimos, solo tuviste <b>"+user_score+"</b> de <b>"+questions_to_show+"</b> \nTu calificación <b>NO</b> es aprobatoria. Debes reintentar.</p></span>";
         ScoreText.innerHTML = scoreTag;
     }
 
-    if(user_score >= 35 && user_score <= 50){
+    if(user_score >= 15 && user_score <= 20){
         
         
         let scoreTag = "<span><p>\n Obtuviste <b>"+user_score+"</b> de <b>"+questions_to_show+"</b> \nTu calificación <b>SI</b> es aprobatoria. Puedes continuar con el siguiente nivel.</p></span>";
