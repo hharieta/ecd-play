@@ -1,16 +1,16 @@
 
-
+const base_url = `https://cdn.jsdelivr.net/npm/latex.js/dist/`
 let questions = [
 
     {
         numb: 1,
         question: "¿Selecciona la opción correcta de la siguiente expresión ''El doble de un número x''.",
-        answer:   "El doble de un número se obtiene multiplicándolo por 2, por tanto, el doble de x es 2x.",
+        answer: "El doble de un número se obtiene multiplicándolo por 2, por tanto, el doble de x es 2x",
         options: [
-            "El doble de un número se obtiene multiplicándolo por 2, por tanto, el doble de x es 2x.",
-            "El doble de x es 2x, por tanto, si le sumamos 2, tenemos 2x + 2.",
-            "El doble de x es 2x^2.",
-            "Ninguna de las opciones"
+            "El doble de un número se obtiene multiplicándolo por 2x, por tanto, el doble de x es, 4x",
+            "El doble de un número se obtiene multiplicándolo por 2, por tanto, el doble de x es 2x",
+            "El doble de x es: "+"<latex-js baseURL="+base_url+">$${\\Large 2x^2}$$</latex-js>",
+            "<latex-js baseURL="+base_url+">$${\\Large x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}}$$</latex-js>"
         ]
     },
 
@@ -29,7 +29,7 @@ let questions = [
 
     {
         numb: 3,
-        question: "¿Es f(x)=6x<sup>2</sup>+4x+1 cuadrática?",
+        question: "<latex-js baseURL="+base_url+">$${\\LARGE f(x)=6x^2+4x+1}$$</latex-js> ¿es cuadrática?",
         answer: "Si",
         options: [
             "Si",
@@ -53,7 +53,7 @@ let questions = [
 
     {
         numb: 5,
-        question: "9 + x = 1/2  (35 + x)",
+        question: "<latex-js baseURL="+base_url+">$${\\LARGE 9 + x = { 1 \\over 2 (35 + x)}}$$</latex-js>",
         answer:   "x = 17",
 
         options: [
@@ -78,19 +78,19 @@ let questions = [
     
     {
         numb: 7,
-        question: "Realiza: 5x<sup>2</sup> * (2x<sup>3</sup> + 3y<sup>3</sup>)",
-        answer: "10x^5 + 15y^5",
+        question: "Realiza: "+ "<latex-js baseURL="+base_url+">$${\\LARGE 5x^2 \\cdot (2x^3 + 3y^3)}$$</latex-js>",
+        answer: "$${\\Large 10x^5 + 15y^5}$$",
         options: [
-            "15x5  + 20y^5", 
-            "7x^3  + 10y^5",
-            "12x^5 + 16y^2",
-            "10x^5 + 15y^5"
+            "<latex-js baseURL="+base_url+">$${\\Large 15x5  + 20y^5}$$</latex-js>", 
+            "<latex-js baseURL="+base_url+">$${\\Large 7x^3  + 10y^5}$$</latex-js>",
+            "<latex-js baseURL="+base_url+">$${\\Large 12x^5 + 16y^2}$$</latex-js>",
+            "<latex-js baseURL="+base_url+">$${\\Large 10x^5 + 15y^5}$$</latex-js>"
         ]
     },
 
     {
         numb: 8,
-        question: "Factoriza el trinomio: 5x<sup>2</sup> + 7x + 2",
+        question: "Factoriza el trinomio: " + "<latex-js baseURL="+base_url+">$${\\LARGE 5x^2 + 7x + 2}$$</latex-js>",
         answer: "(5x + 2) (x + 1)",
         options: [
             "(4x + 13) (7x - 5)",
@@ -102,7 +102,7 @@ let questions = [
 
     {
         numb: 9,
-        question: "Factoriza el trinomio: 3x<sup>2</sup> + 7x - 6",
+        question: "Factoriza el trinomio: " + "<latex-js baseURL="+base_url+">$${\\LARGE 3x^2 + 7x - 6}$$</latex-js>",
         answer: "(x + 3) (3x - 2)",
         options: [
             "(x + 3) (3x - 2)",
@@ -114,7 +114,7 @@ let questions = [
 
     {
         numb: 10,
-        question: "5(x + 5)-3(x + 5)",
+        question: "<latex-js baseURL="+base_url+">$${\\LARGE 5(x + 5)-3(x + 5)}$$</latex-js>",
         answer: "x = 16",
         options: [
             "x = 8",
@@ -126,7 +126,7 @@ let questions = [
 
     {
         numb: 11,
-        question: " Calcula el perimetro  Base = 2x + 2x = 4x y Altura x + x = 2x ",
+        question: "Calcula el perimetro  Base = 2x + 2x = 4x y Altura x + x = 2x ",
         answer: "Ancho mide 5 cm y el largo 10 cm",
         options: [
             "Ancho mide 12 cm y el largo 14 cm",
@@ -138,13 +138,13 @@ let questions = [
 
     {
         numb: 12,
-        question: " Factorizar x<sup>4</sup> + x<sup>2</sup> +1 ",
-        answer: "(x^2+x+1)(x^2-x+1)",
+        question: " Factorizar: " + "<latex-js baseURL="+base_url+">$${\\LARGE x^4 + x^2 +1 }$$</latex-js>",
+        answer: "$${\\Large (x^2+x+1)(x^2-x+1)}$$",
         options: [
-            "(x^2+x+1)(x^2-x+1)",
-            "(x^4+x+3)(x^3-x+2)" ,
-            "(x^3+x)(x-x+14)",
-            "(x^6+x+15)(-x+14)"
+            "<latex-js baseURL="+base_url+">$${\\Large (x^2+x+1)(x^2-x+1)}$$</latex-js>",
+            "<latex-js baseURL="+base_url+">$${\\Large (x^4+x+3)(x^3-x+2)}$$</latex-js>" ,
+            "<latex-js baseURL="+base_url+">$${\\Large (x^3+x)(x-x+14)}$$</latex-js>",
+            "<latex-js baseURL="+base_url+">$${\\Large (x^6+x+15)(-x+14)}$$</latex-js>"
         ]
     },
 
@@ -167,14 +167,14 @@ let questions = [
         options: [
             " x = 9 años transcurridos ",
             " x = 8 años transcurridos " ,
-            " x = 6 años transcurridos ",
+            " x = 6 años transcurridos ", 
             " x = 7 años transcurridos "
         ]
     },
 
     {
         numb: 15,
-        question: " Sistemas de ecuaciones lineales {3x - 2y = 4, 5x + 2y = 12",
+        question: "Sistemas de ecuaciones lineales " + "<latex-js baseURL="+base_url+">$${\\LARGE \\left\\{ 3x - 2y = 4 \\atop 5x + 2y = 12 \\right. } $$</latex-js>",
         answer:   " x = 2 , y = 1 ",
         options: [
             " x = 5 , y = 3 ",
@@ -186,7 +186,7 @@ let questions = [
 
     {
         numb: 16,
-        question: "Clasificación de matrices: ¿Cuál es la clasificación de la siguiente matriz dada? |1 2 5, 9 1 3|2x3",
+        question: "Clasificación de matrices: ¿Cuál es la clasificación de la siguiente matriz dada?" + "<latex-js baseURL="+base_url+">${\\huge \\begin{vmatrix} 1 & 2 & 5 \\\\  9 & 1 & 3 \\end{vmatrix} 2x3}$</latex-js>",
         answer: "Matriz Rectangular",
 
         options: [
@@ -199,7 +199,7 @@ let questions = [
 
     {
         numb: 17,
-        question: "Clasificación de matrices: ¿Cuál es la clasificación de la siguiente matriz dada? |1 2 -5, 3 6 5, 0 -1 4|3x3",
+        question: "Clasificación de matrices: ¿Cuál es la clasificación de la siguiente matriz dada?" + "<latex-js baseURL="+base_url+">${\\huge \\begin{vmatrix} 1 & 2 & -5 \\\\ 3 & 6 & 5 \\\\ 0 & -1 & 4 \\end{vmatrix} 3x3 }$</latex-js>",
         answer: "Matriz Cuadrada ",
 
         options: [
